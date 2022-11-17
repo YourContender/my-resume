@@ -1,0 +1,29 @@
+.side_left {
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: -10%;
+    align-items: center;
+    transform: rotate(-90deg);
+    span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 24px;
+        letter-spacing: 4px;
+    }
+    &_links {
+        img {
+            width: 24px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+    }
+    &_line {
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+        margin: 0 20px;
+    }
+}

@@ -1,0 +1,96 @@
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.promo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://wallpaperaccess.com/full/5745221.jpg') no-repeat 50%/cover;
+    &_side {
+        display: flex;
+        position: absolute;
+        top: 40%;
+        left: -10%;
+        align-items: center;
+        transform: rotate(-90deg);
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 24px;
+            letter-spacing: 4px;
+        }
+        &_links {
+            img {
+                width: 24px;
+                margin-left: 15px;
+                cursor: pointer;
+            }
+        }
+        &_line {
+            width: 100px;
+            height: 2px;
+            background-color: #000;
+            margin: 0 20px;
+        }
+    }
+    &_user {
+        position: absolute;
+        top: 20%;
+        background-color: #f8f9fa73;
+        border-radius: 5px;
+        width: 580px;
+        height: 350px;
+        padding: 24px;
+    }
+    &_subtitle {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        position: relative;
+        z-index: 2;
+        @include before_circle;
+        span {
+            padding-left: 10px;
+            color: rgba(27, 27, 26, 0.801);
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 22px;
+            letter-spacing: 2px;
+        }
+    }
+    &_links {
+        display: flex;
+        align-items: center;
+        a {
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Poppins';
+            width: 135px;
+            height: 45px;
+            background-color: #FFA501;
+            border-radius: 4px;
+            margin-right: 15px;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.829);
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            transition: .4s ease-in;
+            outline: none;
+            &:hover {
+                border: 1px solid #FFA501;
+                background: none;
+            }
+        }
+    }
+}
