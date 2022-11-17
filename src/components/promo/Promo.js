@@ -1,10 +1,12 @@
-import '../../sass/style.scss'
+import Menu from '../menu/Menu';
 import SideBar from '../side-bar/SideBar';
+import '../../sass/style.scss'
 
 function Promo() {
     return (
         <div className="promo">
             <SideBar />
+            <Menu />
 
             <div className="container">
                 <div className="promo_user">
