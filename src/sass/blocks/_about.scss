@@ -1,0 +1,85 @@
+.about {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    &_photo {
+        img {
+            width: 440px;
+            height: 600px;
+        }
+    }
+    &_descr {
+        width: 670px;
+        &_container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &_subtitle {
+            display: flex;
+            align-items: center;
+            height: 40px;
+            margin-top: 10px;
+            span {
+                padding-left: 44px;
+                font-family: 'Poppins';
+                font-size: 24px;
+                letter-spacing: 2px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    margin-top: -7px;
+                    margin-left: -12px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ffa111;
+                    z-index: -1;
+                }
+            }
+        }
+        &_title {
+            h1 {
+                padding-left: 35px;
+                font-family: 'Poppins';
+                font-size: 40px;
+                letter-spacing: 2px;
+            }
+        }
+        &_line {
+            width: 150px;
+            margin-left: 35px;
+            height: 2px;
+            background-color: #ffa111;
+        }
+        &_me {
+            margin-left: 35px;
+            p {
+                font-family: 'Poppins';
+                font-size: 20px;
+                line-height: 22px;
+                letter-spacing: 2px;
+            }
+        }
+        &_curse {
+            margin-left: 35px;
+            margin-top: 15px;
+            width: 300px;
+            h2 {
+                font-family: 'Poppins';
+                font-size: 28px;
+                letter-spacing: 2px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    margin-top: -6px;
+                    margin-left: -8px;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ffa111;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

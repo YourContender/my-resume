@@ -40,13 +40,16 @@
             border: none;
             font-family: 'Poppins';
             font-size: 36px;
+            z-index: 999;
             &:hover {
                 color: red;
             }
         }
     }
     &_list {
+        position: relative;
         padding-top: 80px;
+        transition: all .5s;
         li {
             font-family: 'Poppins';
             font-style: normal;
@@ -54,11 +57,26 @@
             font-size: 24px;
             line-height: 36px;
             margin-top: 35px;
+            margin-left: 15px;
             text-transform: uppercase;
             letter-spacing: 4px;
             color: rgba(31, 29, 29, 0.7);
+            list-style: none;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 5%;
+                margin-top: 8px;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #000;
+                border-radius: 100%;
+            }
             &:hover {
                 color: #fff;
+                &:before {
+                    background-color: #fff;
+                }
             }
         }
     }
