@@ -1,6 +1,5 @@
 import photo from '../../img/photo.jpg';
 import icon1 from '../../icons/icon1.png';
-import icon2 from '../../icons/icon2.png';
 import icon3 from '../../icons/icon3.png';
 
 const AboutMe = () => {
@@ -15,7 +14,7 @@ const AboutMe = () => {
                     <span>Про мене</span>
                 </div>
 
-                <div className="about_descr_title">
+                <div className="title_fz20">
                     <h1>Мене звати Сергій</h1>
                 </div>
 

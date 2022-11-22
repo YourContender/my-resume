@@ -1,0 +1,35 @@
+.sample {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        padding-left: 44px;
+        font-family: 'Poppins';
+        font-size: 24px;
+        letter-spacing: 2px;
+        &:before {
+            content: '';
+            position: absolute;
+            margin-top: -5px;
+            margin-left: 21px;
+            width: 40px;
+            height: 40px;
+            z-index: -1;
+            border-radius: 100%;
+            background-color: #ffa111;
+        }
+    }
+    &_title {
+        text-align: center;
+        h1 {
+            margin-left: 35px;
+        }
+    }
+    &_line {
+        width: 150px;
+        height: 2px;
+        background-color: #ffa111;
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+}

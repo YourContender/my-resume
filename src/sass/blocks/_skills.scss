@@ -1,0 +1,24 @@
+.skills {
+    width: 1250px;
+    margin: 100px auto;
+    &_list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &_item {
+            width: 270px;
+            height: 270px;
+            border: 1px solid #595959;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            &_text {
+                text-align: center;
+                height: 60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_list {
+        margin-top: 120px;
+        list-style-type: none;
+        position: relative;
+        &_learn {
+            position: absolute;
+            margin-top: 40px;
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 30px;
+                height: 30px;
+                background-color: #ffa111;
+                border-radius: 100%;
+                margin-top: 40px;
+                margin-left: 55px;
+            }
+        }
+        &_work {
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                width: 30px;
+                height: 30px;
+                background-color: #ffa111;
+                border-radius: 100%;
+                margin-top: 65px;
+                margin-left: 55px;
+            }
+        }
+        &_container {
+            display: flex;
+            position: relative;
+            h5 {
+                display: block;
+                margin: 0;
+                position: absolute;
+                top: 20px;
+                left: 52%;
+                transform: translateX(-50%);
+                font-family: 'Poppins';
+                text-transform: uppercase;
+                font-size: 20px;
+                z-index: 10;
+                letter-spacing: 4px;
+            }
+        }
+        &_item {
+            position: relative;
+            width: 450px;
+            padding-bottom: 35px;
+            margin-left: 70px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                background-color: #000;
+                top: -10px;
+                left: -40px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 65px;
+                height: 1px;
+                background-color: #000;
+                margin-top: 14px;
+                left: -40px;
+            }
+            p {
+                font-size: 12px;
+                margin-left: 85px;
+                margin-bottom: 0;
+            }
+            img {
+                padding-right: 20px;
+            }
+            h2 {
+                margin: 0;
+                font-size: 22px;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #ffa111;
+                    z-index: -1;
+                    border-radius: 100%;
+                    margin-left: -10px;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}
