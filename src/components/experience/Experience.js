@@ -36,7 +36,7 @@ const Experience = () => {
                     <li className="experience_list_item">
                         <div>
                             <h2 className="title_fz20">
-                                <img src={icon1} alt="" />Інтернатура Onix
+                                <img src={icon1} alt="" />Інтернатура Onix 2022
                             </h2>
                             <p>
                                 4-ьох місячна інтернатура, основний акцент 
@@ -71,7 +71,6 @@ const Experience = () => {
                     </li>
                 </ul>
             </div>
-
         </div>
     )
 }
